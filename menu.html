@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="newModal.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="first_screen">
+        <div class="container">
+                <div class="header">
+                    <img class="logo" src="img/kfc.png" alt="">
+                     <ul>
+                         <li><a href="home.html">Home</a></li>
+                         <li><a class="red" href="menu.html">Menu</a></li>
+                         <li><a href="recipe.html">Recipe</a></li>
+                         <li><a href="about.html">About</a></li>
+                         <li><a href="contact.html">Contact</a></li>
+                     </ul>
+                     <div class="icons">
+                        <a href="">
+                            <img src="img/search.png" alt="">
+                         </a>
+                         <a href="">
+                            <img src="img/cart.png" alt="">
+                         </a>
+                         <button class="button" data-action="open-modal">
+                            <img src="img/user.png" alt="">
+                        </button>
+                        <div class="backdrop js-backdrop">
+                            <div class="modal">
+                              <h2>Sign up</h2>
+                              <form class="formBox" autocomplete="off">
+                                <label>
+                                  Login
+                                  <input type="text" name="login" placeholder="enter your login" />
+                                </label>
+                                <label>
+                                  Email
+                                  <input type="email" name="email" placeholder="enter your email" />
+                                </label>
+                                <label>
+                                  Password
+                                  <input
+                                    type="password"
+                                    name="password"
+                                    placeholder="enter your password"
+                                  />
+                                </label>
+                                <label class="checkbox">
+                                  <input type="checkbox" />
+                                  I give consent for the processing of personal data
+                                </label>
+                              </form>
+                      
+                              <div class="btnBox">
+                                <button
+                                  type="submit"
+                                  disabled
+                                  class="button js-send"
+                                  data-action="send-modal"
+                                >
+                                  Submit
+                                </button>
+                                <button
+                                  type="button"
+                                  class="button js-close"
+                                  data-action="close-modal"
+                                >
+                                  Close
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                     </div>    
+                </div>
+                    <h2 class="contact">Menu</h2>
+            </div>         
+        </div>
+    <footer>
+        <div class="container">
+            <div class="left2">
+                <img src="img/kfc.png" alt="">
+                <p>We cook and deliver the tastiest food right away to your designated location</p>
+                <div class="media">
+                    <a href="">
+                        <img src="img/Instagram.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="img/Facebook.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="img/Twitter.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="right2">
+                <ul>
+                    <li><a class="about" href="">about</a></li>
+                    <li><a href="">about us</a></li>
+                    <li><a href="">features</a></li>
+                    <li><a href="">news</a></li>
+                    <li><a href="">menu</a></li>
+                </ul>
+                <ul>
+                    <li><a class="about" href="">company</a></li>
+                    <li><a href="">why burger king?</a></li>
+                    <li><a href="">partner with us</a></li>
+                    <li><a href="">FAQ</a></li>
+                    <li><a href="">blog</a></li>
+                </ul>
+                <ul>
+                    <li><a class="about" href="">support</a></li>
+                    <li><a href="">account</a></li>
+                    <li><a href="">support center</a></li>
+                    <li><a href="">feedback</a></li>
+                    <li><a href="">contact us</a></li>
+                </ul>
+                <ul>
+                    <li><a class="about" href="">get in touch</a></li>
+                    <li><a href="">question or feedback?<br>we’d love to hear from you</a></li>
+                    <li class="ppp"><a class="email" href="">email address<img src="img/Union.png" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/dataFood.js" type="module"></script>
+    <script src="js/kfc.js" type="module"></script>
+    <script src="js/new_modal.js"></script>
+</body>
+</html>
